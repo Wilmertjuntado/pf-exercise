@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orangered;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: aliceblue;
+    
+}
+
+h1{
+    background-color: aquamarine;
+    color: rebeccapurple;
+    display: inline-block;
+    height: 50px;
+   
+    
+}
+
+ul{
+    background-color: brown;
+}
+
+li{
+    /* background-color: blueviolet; */
+}
