@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: orangered;
+    /* background-color: orangered; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,14 +15,13 @@ header{
 }
 
 h1{
-    background-color: aquamarine;
-    color: rebeccapurple;
+    /* background-color: aquamarine;
+    color: rebeccapurple; */
     display: inline-block;
     padding: 20px;   
     height: 100px;
     width: 200px;
-   
-    
+       
 }
 
 ul{
@@ -32,6 +31,8 @@ ul{
 li{
     /* background-color: blueviolet; */
 }
+
+/****************************************************HEADER SECTION****************************/
 
 .header{
     position: relative;
@@ -49,3 +50,45 @@ li{
      transform: translate(-50%, -50%);
      color: #fff;
  }
+
+ .header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 7%;
+}
+
+/* .header__nav ul{
+    float: right;
+} */
+
+.header__nav ul li{
+    /* background-color: orangered; */
+    display: inline-block;
+    margin: 10px 20px;
+
+}
+
+.header__nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+.header__headings{
+   position: absolute;
+    /* background-color: green; */
+@@ -58,3 +95,13 @@ li {
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/****************************************************ABOUT SECTION****************************/
+
+/****************************************************PORTFOLIO SECTION****************************/
+
+/****************************************************CONTACT SECTION****************************/
+
+/****************************************************FOOTER SECTION****************************/
