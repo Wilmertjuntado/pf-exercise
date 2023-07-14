@@ -27,7 +27,7 @@ a{
   position: relative;
   height: 100vh;
   background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
-  url('../images/pexels-royal-anwar-450214.jpg');
+  url('../images/images/pexels-royal-anwar-450214.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -148,6 +148,24 @@ a{
   
 } 
 /****************************************************CONTACT SECTION****************************/
+.contact{
+    height: 100vh;
+    color:#fff;
+    background-color: #362D2D;
+    padding: 5%;
+}
 
+.contact__row{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__row__left{
+    background-color: #20E700;
+}
+
+.contact__row__right{
+    background-color: antiquewhite;
+}
 /****************************************************FOOTER SECTION****************************/
 
