@@ -38,7 +38,9 @@ li{
     position: relative;
     height: 100vh;
     background-image: url('/images/images/pexels-royal-anwar-450214.jpg');
-    background-size: cover;
+    background-image: linear-gradient(rgba(3,4,7, 0.48), rgba(5, 10, 30, 0.48)),
+  url('/images/images/pexels-royal-anwar-450214.jpg');
+  background-size: cover;
   
   }
 
