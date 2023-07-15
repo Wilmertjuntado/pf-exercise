@@ -201,6 +201,9 @@ a{
     color: #fff;
     width: fit-content;
 }
+.contact__btn:hover{
+    background-color: #20E700;
+}
 
 .contact__btn.contact__btn--1{
     display:inline-block;
@@ -208,8 +211,27 @@ a{
 
 .contact__row--right{
     background-color: blue;
+    flex-basis: 60%;
 
 
+}
+.contact__row--right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    /* outline: none;
+    background:#1E1E1E;
+    border: 6px;
+    color:azure;
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px; */
+}
+form input:hover, form textarea:hover{
+    outline-style: solid;
+    outline-color: aquamarine;
 }
 /****************************************************FOOTER SECTION****************************/
 
