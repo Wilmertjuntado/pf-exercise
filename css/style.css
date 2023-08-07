@@ -9,17 +9,20 @@ CSS SPECIFICITY > WHICH CODE WILL BE GIVEN IMPORTANCE
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+   
+}
 
 /*ELEMENT SELECTORS - GENERAL STYLINGS*/
 
 body{   
     /* background-color: orangered; */
     font-family: 'Poppins', sans-serif;
+    
 } 
 
-a{
-    text-decoration: none;
-}
+
 /* CUSTOM CLASSNAME SELECTORS*/
 
 /****************************************************HEADER SECTION****************************/
@@ -42,6 +45,10 @@ a{
     color: #20E700;
 }
 
+.header__brand--span:hover{
+    color: white;
+}
+
 
 .header__nav{
     display: flex;
@@ -51,52 +58,86 @@ a{
     background-color: rgba(36, 35, 35, 0.376);
 }
 
+.header__brand {
+    font-size: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__brand:hover {
+    color: blue;
+}
 
 .header__nav ul li{
     display: inline-block;
     margin: 10px 20px;
 }
 
-.header__nav ul li a{
+.a-design {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.header__heading{
-   position: absolute;
-    /* background-color: green; */
+.a-design:hover {
+    color: blue;
+}
+
+.header__heading {
+   /* position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: #fff; */
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+    height: 60%;
     color: #fff;
+    
 }
 
 .header__heading--h1{
-    font-size: 70px;
-    margin-top: 10px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
 }
 
+.heading__h2 {
+    font-size: 2rem;
+}
 /****************************************************ABOUT SECTION****************************/
+
 .about{
+
     height: 80vh;
     background-color: #1E1E1E;
     color: #fff;
 }
 
 .about__heading{
-    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+   
     text-align: center;
-    margin: auto;
+    justify-content: center;
+
+    
 }
 
 .about__heading--h2{
-    font-size: 60px;
-    padding-top: 6rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    
 }
 
 .about__heading--p{
-    text-align: center;
+    font-size: 1.2rem;
 }
 
 
@@ -104,14 +145,15 @@ a{
 
 .portfolio{
     /* height: 180vh; 1024 x 728 */
-    height: 200vh;
+    height: 100vh;
     padding: 50px;
     text-align: center;
     color: #362D2D;
 }
 
 .portfolio__heading--h2{
- font-size: 60px;
+ font-size: 3rem;
+ font-weight: bold;
  margin-top: 1%;
 }
 
@@ -119,37 +161,49 @@ a{
 .portfolio__container{
     display: grid;
     /*two dimensional*/
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); 
     grid-gap: 40px;
     /* NOTE TO SELF:  grid-gap: 30px; good for 1024 x 768 screen size*/
     padding: 5%; 
-    margin-top: 50px;
+    margin-top: 1rem;
 }
 
 
 .portfolio__img img{
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     display: block;
     border-radius: 10px;
 
 }
 
+.portfolio__img img:hover {
+    border: 1px solid #777;
+}
+
 .portfolio__btn{
   background-color: #45893A;
   color: #fff;
-  height: 75px;
-  width: 303px;
-  padding: 2% 5%;
+  height: 5rem;
+  width: 10rem;
+  padding: 2rem;
   border-radius: 10px;
   font-weight: 700;
+  font-size: 2rem;
   letter-spacing: 2px;
+  text-decoration: none;
   
 } 
+
+.portfolio__btn:hover {
+    color: aqua;
+    background-color: #140c0c;
+}
 /****************************************************CONTACT SECTION****************************/
+
 .contact{
-    height: 100vh;
+    height: 80vh;
     color:#fff;
     background-color: #362D2D;
     padding: 5%;
@@ -161,10 +215,8 @@ a{
 }
 
 .contact__row--left{
-    background-color: green;
-
-    /* background-color: green;   */
-    flex-basis: 35%;
+    flex-basis: 50%;
+    padding-left: 20rem;
 }
 
 .contact__heading--h2{
@@ -210,8 +262,9 @@ a{
 }
 
 .contact__row--right{
-    background-color: blue;
-    flex-basis: 60%;
+    /* background-color: blue; */
+    flex-basis: 50%;
+    padding-left: -1rem;
 
 
 }
@@ -233,5 +286,15 @@ form input:hover, form textarea:hover{
     outline-style: solid;
     outline-color: aquamarine;
 }
+
+
 /****************************************************FOOTER SECTION****************************/
 
+footer {
+    height: 10rem;
+    text-align: center;
+    line-height: 10rem;
+    background-color: #140c0c;
+    color: #D9D9D9;
+   
+}
