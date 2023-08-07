@@ -145,10 +145,11 @@ body{
 
 .portfolio{
     /* height: 180vh; 1024 x 728 */
-    height: 100vh;
-    padding: 50px;
+    height: auto;
+    padding: 5rem;
     text-align: center;
     color: #362D2D;
+    margin-bottom: 5rem;
 }
 
 .portfolio__heading--h2{
@@ -161,21 +162,23 @@ body{
 .portfolio__container{
     display: grid;
     /*two dimensional*/
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); 
     grid-gap: 40px;
     /* NOTE TO SELF:  grid-gap: 30px; good for 1024 x 768 screen size*/
     padding: 5%; 
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 
 .portfolio__img img{
     object-fit: cover;
-    width: 100%;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     display: block;
     border-radius: 10px;
 
+    
 }
 
 .portfolio__img img:hover {
@@ -193,6 +196,7 @@ body{
   font-size: 2rem;
   letter-spacing: 2px;
   text-decoration: none;
+  margin-top: 5rem;
   
 } 
 
@@ -214,9 +218,53 @@ body{
     flex-direction: row;
 }
 
-.contact__row--left{
+@media screen and (max-width: 507px) {
+
+    .contact {
+        height: auto;
+    }
+    .contact__row {
+        display: flex;
+    flex-direction: column;
+    }
+
+    .contact__heading--h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .contact {
+        height: auto;
+    }
+    .contact__row {
+        display: flex;
+    
+    }
+
+    .contact__heading--h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .contact__row {
+        display: flex;
+        flex-direction: row;
+        }
+    .contact__row--left{
+        margin-left: 10rem;
+    }
+    .contact__row--right{
+        margin-right: 10rem;;
+    }
+}
+
+.contact__row--left {
+    /* background-color: #20E700; */
     flex-basis: 50%;
-    padding-left: 20rem;
+    padding-left: 2rem;
 }
 
 .contact__heading--h2{
@@ -264,7 +312,7 @@ body{
 .contact__row--right{
     /* background-color: blue; */
     flex-basis: 50%;
-    padding-left: -1rem;
+    padding-left: 2rem;
 
 
 }
